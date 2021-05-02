@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gbtr.me/sitemap.xml
+#DaumWebMasterTool:5a4d5b27c30f2ca01e9f72677c4217bad3a89f0932191e38767b9e29aa3128c6:SBDn+3M1gAUD2c6N/ci3rg==
