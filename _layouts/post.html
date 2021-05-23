@@ -24,6 +24,17 @@ layout: default
     </div>
   </header>
 
+  <script>
+    var event = document.querySelector('#post-content');
+    event.addEventListener("click", function( ) {
+      gtag('event', '보기', {
+      'event_category': '글',
+      'event_label': '{{ page.title }}',
+      'value': 10
+      });
+      }, false);
+    </script>
+
   <article id="post-content">
     <div class="container">
       <div class="row">
@@ -49,12 +60,5 @@ layout: default
         </div>
       </div>
     </div>
-      <script>
-        window.onload = function(){
-          gtag('event', '보기', {
-          'event_category': '글',
-          'event_label': '{{ page.title }}',
-          });
-          }, false);
-      </script>
+
 {% include disqus.html %}
