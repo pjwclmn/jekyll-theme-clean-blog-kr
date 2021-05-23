@@ -50,5 +50,14 @@ layout: default
       </div>
     </div>
   </article>
-
+    <script>
+    var event = document.querySelector('#post-content');
+    event.addEventListener("click", function( ) {
+      gtag('event', '보기', {
+      'event_category': '{{ page.title }}',
+      'event_label': 'label',
+      'value': 10
+      });
+      }, false);
+    </script>
 {% include disqus.html %}
