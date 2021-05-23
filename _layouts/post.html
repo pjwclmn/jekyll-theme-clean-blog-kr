@@ -24,15 +24,13 @@ layout: default
     </div>
   </header>
 
-  <script>
-    var event = document.querySelector('#post-content');
-    event.addEventListener("click", function( ) {
+    <script>
+      window.onload = function() {
       gtag('event', '보기', {
       'event_category': '글',
-      'event_label': '{{ page.title }}',
-      'value': 10
-      });
-      }, false);
+      'event_label': '{{ page.title }}'
+      })
+    }
     </script>
 
   <article id="post-content">
